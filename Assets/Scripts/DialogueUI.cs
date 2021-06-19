@@ -9,7 +9,7 @@ public class DialogueUI : MonoBehaviour
     
     private void Start()
     {
-        textLabel.text = "Hello!\nThis is the second line.";
+        GetComponent<TypewriterEffect>().Run("This is a bit of text\nHello!", textLabel);
 
     }
 
