@@ -5,16 +5,18 @@ using TMPro;
 
 public class TypewriterEffect : MonoBehaviour
 {
-    [SerializeField]
-    private float typewriterSpeed = 50f;
-    public void Run(string textToType, TMP_Text textLabel)
+    [SerializeField] private float typewriterSpeed = 50f;
+    public Coroutine Run(string textToType, TMP_Text textLabel)
     {
-        StartCoroutine(TypeText(textToType, textLabel));
+        return StartCoroutine(TypeText(textToType, textLabel));
     }
 
 
     private IEnumerator TypeText(string textToType, TMP_Text textLabel)
     {
+        textLabel.text = string.Empty;
+
+
         float t = 0;
         int charIndex = 0;
 
