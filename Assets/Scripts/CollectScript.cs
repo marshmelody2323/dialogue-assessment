@@ -8,4 +8,5 @@ public class CollectScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }
