@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 61365761}
   - component: {fileID: 61365760}
   - component: {fileID: 61365759}
+  - component: {fileID: 61365763}
   - component: {fileID: 61365762}
   m_Layer: 5
   m_Name: Option 1
@@ -361,17 +362,29 @@ MonoBehaviour:
           m_StringArgument: Hello!
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1051398012}
-        m_TargetAssemblyTypeName: StatScript, Assembly-CSharp
-        m_MethodName: OnButtonClick1
-        m_Mode: 1
+      - m_Target: {fileID: 1202418259}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 61365763}
+        m_TargetAssemblyTypeName: ButtonText2, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Like - 1
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &61365760
 MonoBehaviour:
@@ -424,6 +437,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 1266046187}
+--- !u!114 &61365763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61365757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ce3610e14d8264391274467f6dab87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1513935366}
 --- !u!1 &97820301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1205,7 @@ Transform:
   m_LocalScale: {x: 108, y: 108, z: 108}
   m_Children:
   - {fileID: 1513935365}
+  - {fileID: 1420358157}
   m_Father: {fileID: 1737157330}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1252,7 +1279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I don't like the plant, really (Requires Dislike 2)
+  m_Text: I don't like the plant, really (Requires Dislike 1)
 --- !u!222 &423298503
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1547,7 +1574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &789079355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1620,7 +1647,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 789079358}
   m_OnClick:
     m_PersistentCalls:
@@ -2549,7 +2576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1202418260
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2635,7 +2662,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1202418264}
   m_OnClick:
     m_PersistentCalls:
@@ -2650,18 +2677,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: It was ok, honestly.
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1051398012}
-        m_TargetAssemblyTypeName: StatScript, Assembly-CSharp
-        m_MethodName: SetActive
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1202418264
@@ -2796,7 +2811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1332563640
 Transform:
   m_ObjectHideFlags: 0
@@ -2971,6 +2986,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351346388}
   m_CullTransparentMesh: 1
+--- !u!1 &1420358156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420358157}
+  - component: {fileID: 1420358159}
+  - component: {fileID: 1420358158}
+  m_Layer: 5
+  m_Name: StatText2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1420358157
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420358156}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 51.805725}
+  m_LocalScale: {x: 0.009259259, y: 0.009259259, z: 0.009259259}
+  m_Children: []
+  m_Father: {fileID: 341259167}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.9603, y: -0.89}
+  m_SizeDelta: {x: 195.7795, y: 53.721}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1420358158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420358156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Dislike - 0
+
+
+'
+--- !u!222 &1420358159
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420358156}
+  m_CullTransparentMesh: 1
 --- !u!1 &1437300645
 GameObject:
   m_ObjectHideFlags: 0
@@ -3084,8 +3181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.8009033, y: -0.75408936}
-  m_SizeDelta: {x: 161.36, y: 138.88}
+  m_AnchoredPosition: {x: 1.8009033, y: -0.3598}
+  m_SizeDelta: {x: 161.36, y: 53.721}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513935366
 MonoBehaviour:
@@ -3120,7 +3217,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Like - \n\nDislike - "
+  m_Text: 'Like - 0
+
+
+'
 --- !u!222 &1513935367
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3922,6 +4022,7 @@ GameObject:
   - component: {fileID: 2047048406}
   - component: {fileID: 2047048405}
   - component: {fileID: 2047048404}
+  - component: {fileID: 2047048408}
   - component: {fileID: 2047048407}
   m_Layer: 5
   m_Name: Option 2
@@ -4006,6 +4107,30 @@ MonoBehaviour:
           m_StringArgument: I don't ask you why you're helping me, shoosh
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2047048408}
+        m_TargetAssemblyTypeName: ButtonText2, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dislike - 1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 789079354}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2047048405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4057,6 +4182,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 1266046187}
+--- !u!114 &2047048408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047048402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ce3610e14d8264391274467f6dab87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1420358158}
 --- !u!1 &2091417873
 GameObject:
   m_ObjectHideFlags: 0
