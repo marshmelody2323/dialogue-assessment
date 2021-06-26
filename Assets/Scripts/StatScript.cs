@@ -1,18 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StatScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int Like = 0;
+    public int Dislike = 0;
+
+    public Button positiveResponseButton;
+    public bool interactable;
+
+
+    public void OnButtonClick1()
     {
-        
+        Like++;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnButtonClick2()
     {
-        
+        Dislike++;
     }
+
+    public void SetActive()
+    {
+        if(Like > 0)
+        {
+            positiveResponseButton.interactable = true;
+        }
+    }
+    
 }
